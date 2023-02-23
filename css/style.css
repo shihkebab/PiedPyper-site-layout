@@ -1,0 +1,241 @@
+@import url("normalize.css");
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v30-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-900 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-900.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v30-latin-900.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    max-width: 1219px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+/* Header styles start */
+.header {
+    background-color: #007765;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.header_item {
+    margin-right: 8px;
+    color: white;
+}
+
+.header_item:last-child {
+    margin-right: 0px;
+}
+
+.header_link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+    opacity: .75;
+}
+
+.header_stick {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* Header styles end */
+
+/* Intro styles start */
+
+.intro {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-image: url(../img/intro.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.intro_text {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 86px;
+    text-align: center;
+    color: white;
+}
+
+/* Intro styles end */
+
+/* Problem styles start */
+.block {
+    background-color: #EEEEEE;
+    padding-top: 48px;
+    padding-bottom: 92px;
+}
+
+.block_head {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}
+
+.block_text {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+/* Problem styles end */
+
+/* Hero styles start */
+
+
+.hero {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-image: url(../img/hero.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero_text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: white;
+}
+
+/* Hero styles end */
+
+/* block styles start */
+.pcc_logo {
+    float: left;
+    margin-right: 48px;
+}
+
+.block_white {
+    background-color: white;
+}
+
+/* block styles end */
+
+/* team styles start */
+
+
+.members {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+
+.member {
+    margin: 10px;
+    padding: 20px 10px;
+    width: calc(33% - 24px);
+    display: inline-block;
+}
+
+.name {
+    color: #007765;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.work {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* team styles end */
+
+
+/* footer styles start */
+
+footer {
+    color: white;
+    padding: 30px;
+    text-align: center;
+    background-color: #333333;
+
+}
+
+/* footer styles end */
